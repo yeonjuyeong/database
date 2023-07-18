@@ -10,10 +10,13 @@ TEMPORARY TABLESPACE temp;
 ```
 
 <br>classmanager라는 사용자에 권한 부여하기
+<br>CONNECT라는 권한은 데이터베이스에 접속할 수 있는 권한
+<br>RESOURCE라는 권한은 CREATE, ALTER, DROP, 등의 데이터베이스 객체를 조작할 수 있는 권한
+<br>dba라는 권한은 데이터베이스의 모든 작업을 수행할 수 있는 최고 권한을 제공
 ``` sql
-GRANT CONNECT to classmanager;//이 권한은 데이터베이스에 접속할 수 있는 권한
-GRANT RESOURCE to classmanager;//이 권한은 CREATE, ALTER, DROP, 등의 데이터베이스 객체를 조작할 수 있는 권한
-GRANT dba to classmanager;//데이터베이스의 모든 작업을 수행할 수 있는 최고 권한을 제공
+GRANT CONNECT to classmanager;
+GRANT RESOURCE to classmanager;
+GRANT dba to classmanager;
 ```
 
 ## classmanager로 성적DB라는 이름의 데이터베이스 접속 후 테이블 생성
