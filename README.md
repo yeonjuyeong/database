@@ -53,13 +53,13 @@ CREATE TABLE grade_table(
     num NUMBER(5) not NULL,
     name VARCHAR2(20) not NULL,
     sub1 VARCHAR2(20) not NULL,
-    score1 NUMBER(20) not NULL,
+    score1 NUMBER(3) not NULL,
     sub2 VARCHAR2(20) not NULL,
-    score2 NUMBER(20) not NULL,
+    score2 NUMBER(3) not NULL,
     sub3 VARCHAR2(20) not NULL,
-    score3 NUMBER(20) not NULL,
-    total NUMBER(20) not NULL,
-    avg NUMBER(20) not NULL
+    score3 NUMBER(3) not NULL,
+    total NUMBER(3) not NULL,
+    avg NUMBER(3) not NULL
     );
 ```
 
